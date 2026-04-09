@@ -1,0 +1,57 @@
+/1
+a) Ja – endliches Alphabet {0,1}, klare Regel
+   G->(N,T,P,S)
+   N->{S,A}
+   T->{1,0}
+   P-> {S->1, S->0, S->1A, A->1, A->0, A->1A,A->0A, A->ε}
+   S->{S}
+b) Ja – Alphabet {2,3,5,7,...} bzw. darstellbar in Dezimal/Binär. Die Menge ist zwar unendlich, aber berechenbar
+c) Ja – enthält genau ein Wort: das leere Wort. 
+d) Ja – die Sprache mit keinem einzigen Wort ist ebenfalls eine formale Sprache 
+   G={N,T,P,S} N={S} T={} P={} S={}
+e) Ja – endliches Alphabet {·, –, Pause}, feste Kodierungsregeln für Zeichen und Wörter → reguläre Sprache.
+f) Ja – endliches Alphabet {I,V,X,L,C,D,M}, strenge Syntaxregeln → reguläre Sprache, durch eine Grammatik oder
+   einen endlichen Automaten beschreibbar.
+g) Nein, mehrdeutigkeit in abhängigkeit vom Kontext
+h) Ja – endliches Alphabet (ASCII/Unicode-Zeichen), vollständig durch eine formale Grammatik definiert
+i) Ja – endliches Alphabet (die Tasten), beliebig lange aber endliche Folgen
+
+/2
+a)
+„Der Vater von Anna ist Karl"
+„Die Mutter von Josef ist Sabine"
+„Der Grossvater von Karl ist Josef"
+„Die UrGrossmutter von Anna ist Sabine"
+„Der UrUrGrossvater von Josef ist Karl"
+
+b) unendlich viele, da UR -> UR "Ur" und man den Satz somit unendlich lang machen kann
+
+c)
+Artikel Vorfahr Präp Nomen Verb Nomen                   (R1)
+"Der " Vorfahr Präp Nomen Verb Nomen                    (R2)
+"Der " "Vater " Präp Nomen Verb Nomen                   (R4)
+"Der " "Vater " "von " Nomen Verb Nomen                 (R15)
+"Der " "Vater " "von " "Sabine" Verb Nomen              (R12)
+"Der " "Vater " "von " "Sabine" "ist " Nomen            (R16)
+"Der " "Vater " "von " "Sabine" "ist " "Josef"          (R14)
+
+
+Artikel Vorfahr Präp Nomen Verb Nomen                       (R1)
+"Die " Vorfahr Präp Nomen Verb Nomen                        (R3)
+"Die " UR "Grossmutter " Präp Nomen Verb Nomen              (R7)
+"Die " "Ur" "Grossmutter " Präp Nomen Verb Nomen            (R9)
+"Die " "Ur" "Grossmutter " "von " Nomen Verb Nomen          (R15)
+"Die " "Ur" "Grossmutter " "von " "Sabine" Verb Nomen       (R12)
+"Die " "Ur" "Grossmutter " "von " "Sabine" "ist " Nomen     (R16)
+"Die " "Ur" "Grossmutter " "von " "Sabine" "ist " "Anna"    (R11)
+
+Artikel Vorfahr Präp Nomen Verb Nomen                               (R1)
+"Die " Vorfahr Präp Nomen Verb Nomen                                (R3)
+"Die " UR "Grossmutter " Präp Nomen Verb Nomen                      (R7)
+"Die " UR "Ur" "Grossmutter " Präp Nomen Verb Nomen                 (R10)
+"Die " UR "Ur" "Ur" "Grossmutter " Präp Nomen Verb Nomen            (R10)
+"Die " "Ur" "Ur" "Ur" "Grossmutter " Präp Nomen Verb Nomen          (R9)
+"Die " "Ur" "Ur" "Ur" "Grossmutter " "von " Nomen Verb Nomen        (R15)
+"Die " "Ur" "Ur" "Ur" "Grossmutter " "von " "Karl" Verb Nomen       (R13)
+"Die " "Ur" "Ur" "Ur" "Grossmutter " "von " "Karl" "ist " Nomen     (R16)
+"Die " "Ur" "Ur" "Ur" "Grossmutter " "von " "Karl" "ist " "Anna"    (R11)

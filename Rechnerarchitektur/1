@@ -1,0 +1,98 @@
+/1
+a)
+P1: 2 Milliarden IPS
+P2: 2,5 Milliarden IPS
+P3: 1,8181 Milliarden IPS
+
+b)
+P1: 30 Milliarden Takte -> 20 Milliarden Befehle
+P2: 25 Milliarden Takte -> 25 Milliarden Befehle
+P3: 40 Milliarden Takte -> 18,18 Milliarden Befehle
+
+c)
+1,2*1,3=1,56
+P1: 3GHz * 1,56 = 4,68 GHz
+P1: 2,5GHz * 1,56 = 3,9 GHz
+P1: 4GHz * 1,56 = 6,24 GHz
+
+
+/2
+a)
+P1:
+2,5 GHz * 1 * 0,1 = 0,25
+2,5 GHz * 2 * 0,2 = 1
+2,5 GHz * 3 * 0,5 = 3,75
+2,5 GHz * 3 * 0,2 = 1,5
+-> 6,5
+P2:
+3 GHz * 2 * 0,1 = 0,6
+3 GHz * 2 * 0,2 = 1,2
+3 GHz * 2 * 0,5 = 3
+3 GHz * 2 * 0,2 = 1,2
+-> 6
+P2 ist schneller
+
+b)
+P1: 2,25
+P2: 2
+
+c)
+P1: 6,5/2,5 * 10^6 = 2,6 * 10^6
+P2: 6/3 * 10^6 = 2 * 10^6
+
+/3
+a)
+Taktzeit T = 1ns
+Taktfrequenz f = 1/1ns = 1 GHz
+C1: 1GHz*1,1s/1,0*10^9 = 1,1
+C2: 1GHz*1,5s/1,2*10^9 = 1,25
+
+b)
+C1: Verbesserung von 40%
+C2: Verbesserung von 56%
+
+/4
+a)
+FP-Befehle Prozentual: 28%
+28% * 20% = 5,6%
+
+b)
+250s-70s-85s-40s = 55s
+55s * 80% = 44s
+
+c)
+nein
+100%*40s/250s = 16%
+-> 16% < 20%
+
+/4
+a)
+geht nicht
+
+b)
+geht auch nicht
+
+c)
+(0,4*50+0,4*110+0,3*80+0,3*16)/256=0,3625
+
+/6
+a)
+Taktfrequenz f=3GHz
+750s*3GHz=2250*10^9
+2250*10^9/2,389*10^8=9430
+
+b)
+9650/750=12,87
+
+c)
+wächst um 10%
+
+d)
+1,1*1,05=1,155
+-> 15,5% Verbesserung
+
+e)
+750*0,845=633,75
+9650/633,75=15,22
+
+f)

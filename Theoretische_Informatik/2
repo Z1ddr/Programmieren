@@ -1,0 +1,68 @@
+/3
+a)
+bb:
+S->A->B->bb
+
+bbbb:
+S->A->B->bBb->bbbb
+
+abba:
+S->A->aAa->aBa->abba
+
+aabbbbaa:
+S->A->aAa->aaAaa->aaBaa->aabBbaa->aabbbbaa
+
+bbbbbbbb:
+S->A->B->bBb->bbBbb->bbbBbbb->bbbbbbbb
+
+b)
+L(G)={a^i b^2k a^i | i>=0, k>=1}
+
+/4
+a)
+G = (N, T, P, S)
+N = {S, B}
+T = {a, b, c, d}
+P =
+R1: S->aSd
+R2: S->B
+R3: B->bBc
+R4: B->bc
+
+b)
+bc:
+S->B-bc
+
+abcd:
+S->aSd->aBd->abcd
+
+aaabbccddd:
+S->aSd->aaSdd->aaaSddd->aaaBddd->aaabBcddd->aaabbccddd
+
+/5
+a)
+G = (N, T, P, S)
+N = {S, B}
+T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+P =
+R1: S->0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+R2: S->1B1, 2B2, 3B3, 4B4, 5B5, 6B6, 7B7, 8B8, 9B9
+R3: B->ε 
+R4: B->0B0, 1B1, 2B2, 3B3, 4B4, 5B5, 6B6, 7B7, 8B8, 9B9
+R5: B->0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+b)
+0:
+S->0
+
+7:
+S->7
+
+55:
+S->5B5->55
+
+1001:
+S->1B1->10B01->1001
+
+690484096:
+S->6B6->69B96->690B096->6904B4096->690484096
