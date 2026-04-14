@@ -49,7 +49,7 @@ int fib_itr1(int n)
 
 int main()
  {
-     int n = 45;
+     int n = 39;
      auto start = std::chrono::high_resolution_clock::now();
 
      fib_rek(n);
