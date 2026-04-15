@@ -3,7 +3,7 @@
 
 int T_rek(int n)
 {
-    if(n == 1)
+    if(n <= 1)
     {
         return 1;
     }
@@ -29,3 +29,13 @@ int main()
         std::cout << T_rek(i) << std::endl;
     }
 }
+
+/*
+c)
+T(n) E omega(n!)
+
+d)
+(n-1)
+
+e)n-1 E Sigma(n)
+*/
