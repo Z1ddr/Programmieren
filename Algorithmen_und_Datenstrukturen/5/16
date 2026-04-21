@@ -1,0 +1,7 @@
+/16
+a)
+da u(n) E o(n^0,5) -> u(n)^2 E O(n) sogar E o(n)
+
+b) 
+da das wachstum der beiden einzelnen summanten nicht größer als n^2 wachsen,
+ist das wachstum bei beiden zusammen auch nicht stärker

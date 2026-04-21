@@ -1,0 +1,8 @@
+/17
+a)
+da das wachstum der beiden einzelnen summanten nicht größer als n^3 wachsen,
+ist das wachstum bei beiden zusammen auch nicht stärker
+
+b)
+da das wachstum der beiden einzelnen summanten größer oder gleich wie n wachsen,
+ist das wachstum bei beiden zusammen auch stärker als n
