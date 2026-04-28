@@ -1,0 +1,30 @@
+/11
+a)
+Rechtsliear: R3, R4, R5, R6
+Linkslinear: R2, R3, R5, R6
+
+b)
+Chomsky 2:
+Genau ein Nichtterminalsymbol auf linker Seite
+Kontextfrei
+nicht 3 weil S->AbbC 
+
+c)
+abbc:
+S->AbbC->abbC->abbc
+
+bbabbc:
+S->AbbC->BabbC->bBabbC->bbabbC->bbabbc
+
+e)
+L = {b^n a b b c | n>=0}
+
+f)
+Chomsky 2:
+R1: S → Ac
+R2: A → Bb
+R3: B → Cb
+R4: C → a
+R5: C → Da
+R6: D->b
+R7: D->Db

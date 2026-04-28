@@ -1,0 +1,27 @@
+/9
+a)
+Rechtslinear: R3, R6, R8
+Linkslinear: R1 - R8
+
+b)
+Typ 3:
+Linkslinear, mehr Zeichen auf der rechten Seite
+
+c)
+b:
+S->b
+
+bb:
+S->Bb->bb
+
+ba:
+S->Aa->ba
+
+bbbaa:
+S->Aa->Aaa->Bbaa->Bbbaa->bbbaa
+
+e)
+L = {b^m a^n | n >= 0, m >= 1}
+
+f)
+Chomsky 3 Sprache

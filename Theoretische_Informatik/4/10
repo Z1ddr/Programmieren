@@ -1,0 +1,28 @@
+/10
+a)
+Rechtslinear: R3, R4
+Linkslinear: R1, R4
+
+b)
+Chomsky 2:
+Genau ein Nichtterminalsymbol auf linker Seite
+Kontextfrei
+nicht 3 weil A->aBa nicht regulär ist
+
+c)
+abab:
+S->Ab->aBab->abab
+
+abbbbab:
+S->Ab->aBab->abBab->abbBab->abbbBab->abbbbab
+
+e)
+L = {a b^n a b | n >= 1}
+
+f)
+Chomsky 3 Sprache:
+R1: S -> Ab
+R2: A -> Ba
+R3: B -> Bb
+R4: B -> Cb
+R5: C -> a
