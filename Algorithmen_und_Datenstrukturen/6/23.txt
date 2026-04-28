@@ -1,0 +1,9 @@
+/23
+a)
+((a*b)+b)
+=42
+
+b)
+1. Identisch
+2. nicht Identisch
+3. Identisch
