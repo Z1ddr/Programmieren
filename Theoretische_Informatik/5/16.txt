@@ -1,0 +1,29 @@
+/16
+a)
+R1: linkslinear
+R2: rechtslinear / beides
+
+b)
+R2: rechtsrekursiv
+
+c)
+Chomsky 2:
+nicht rein links/rechtslinear, auf linker seite nur ein Nichtterminalsymbol
+
+d)
+aaaaabb:
+S->Abb->aaAbb->aaaaAbb->aaaaabb
+
+f)
+L(G)={a^n b^m | n >= 1, m = 2}
+
+g)
+a a* bb
+
+h)
+S:Ab
+A:Bb
+B:Ba | a
+
+i)
+Chomsky 3

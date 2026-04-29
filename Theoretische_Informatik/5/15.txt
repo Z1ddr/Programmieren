@@ -1,0 +1,35 @@
+/15
+a)
+R1: rechtslinear
+R2: linkslinear
+R3: linkslinear
+R4: beides
+
+b)
+R1: linksrekursiv
+R3: rechtsrekursiv
+
+c)
+Chomsky 2
+nicht rein links/rechtslinear, auf linker seite nur ein Nichtterminalsymbol
+
+d)
+bbaaa:
+S->Sa->Saa->Saaa->bBaaa->bbaaa
+
+f)
+L(G)={a^n b^m | n >= 0, m >= 2}
+
+g)
+bb b* a*
+
+h)
+R1:S->bB
+R2:B->bB
+R3:B->bA
+R4:B->b
+R5:A->aA
+R6:A->a
+
+i)
+Chomsky 3

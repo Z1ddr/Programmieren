@@ -1,0 +1,25 @@
+/12
+a)
+010:
+S->A1B->01B->010
+S->A1B->A10->010
+
+0010:
+S->A1B->0A1B->001B->0010
+S->A1B->A10->0A10->0010
+
+0100:
+S->A1B->01B->010B->0100
+S->A1B->A10B->A100->0100
+
+c)
+R1: Weder noch
+R2: Linkslinear/beides und rechtsrekursiv
+R3: Linkslinear/beides und rechtsrekursiv
+
+d)
+S : A "1" B;
+A : "0" A
+A : "0";
+B : "0" B 
+B : "0";

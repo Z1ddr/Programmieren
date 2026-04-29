@@ -1,0 +1,16 @@
+/14
+a)
+Chomsky 2:
+ein Nichtterminalsymbol
+Produktionsregeln die nicht regulär sind: B->bBb => weder links noch rechtslinear
+
+b)
+aaaabbbaabbc:
+S->ABC->aaABC->aaaaABC->aaaabBC->aaaabbBbC->aaaabbbBbbC->aaaabbbaabbC->aaaabbbaabbc
+
+d)
+L(G)={(aa)^n b b^m a a b^m c^k | n>=0, m>=0, k>=1)}
+
+e)
+Chomsky 2:
+zähler wird für ... b^m a a b^m ... benötigt
