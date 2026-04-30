@@ -1,7 +1,6 @@
 /16
 a)
-R1: linkslinear
-R2: rechtslinear / beides
+R2: beides
 
 b)
 R2: rechtsrekursiv
@@ -15,15 +14,16 @@ aaaaabb:
 S->Abb->aaAbb->aaaaAbb->aaaaabb
 
 f)
-L(G)={a^n b^m | n >= 1, m = 2}
+L(G)={a^2n-1 b^2 | n >= 1}
 
 g)
-a a* bb
+(aa)* a bb
 
 h)
-S:Ab
-A:Bb
-B:Ba | a
+S:A"b"
+A:B"b"
+B:C"a" | "a"
+C:B"a"
 
 i)
 Chomsky 3
