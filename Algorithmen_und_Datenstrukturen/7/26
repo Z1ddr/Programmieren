@@ -1,0 +1,13 @@
+Aufgabe 26: Komplexitätsvergleich
+
+
+Vergleich der Aufwände (Zeitkomplexität):
+Operation | Array-Implementierung | Doppelt verkettete Liste
+----------|-----------------------|-------------------------
+insert    | O(n) (Verschieben)    | O(1) (Zeiger anpassen)
+delete    | O(n) (Verschieben)    | O(1) (Zeiger anpassen)
+Zugriff   | O(1) (Index)          | O(n) (Suchen/Iterieren)
+Begründung: 
+Beim Array müssen beim Einfügen/Löschen alle nachfolgenden Elemente 
+verschoben werden[cite: 50]. Bei der Liste müssen am Iterator lediglich 
+die prev/next-Zeiger der Nachbarn umgebogen werden.
