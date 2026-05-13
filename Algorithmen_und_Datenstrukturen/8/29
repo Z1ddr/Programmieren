@@ -1,0 +1,10 @@
+/29
+a)
+Durchlauf 1: 0, 10, 1, 11, 20, 2, 12, 21, [22]
+Durchlauf 2: 0, 1, 10, 11, 2, 12, 20, [21, 22]
+Durchlauf 3: 0, 1, 10, 2, 11, 12, [20, 21, 22]
+Durchlauf 4: 0, 1, 2, 10, 11, [12, 20, 21, 22]
+Durchlauf 5: 0, 1, 2, 10, [11, 12, 20, 21, 22] (keine weiteren Tausche)
+
+b)
+Im schlechtesten Fall (9*8)/2 = 36 Vergleiche.

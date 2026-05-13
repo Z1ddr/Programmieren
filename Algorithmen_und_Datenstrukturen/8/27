@@ -1,0 +1,13 @@
+/27
+a)
+i=1: [0, 10], 20, 1, 11, 21, 2, 12, 22 (10 war bereits korrekt)
+i=2: [0, 10, 20], 1, 11, 21, 2, 12, 22 (20 war bereits korrekt)
+i=3: [0, 1, 10, 20], 11, 21, 2, 12, 22 (1 wird vor 10 geschoben)
+i=4: [0, 1, 10, 11, 20], 21, 2, 12, 22 (11 wird vor 20 geschoben)
+i=5: [0, 1, 10, 11, 20, 21], 2, 12, 22 (21 war bereits korrekt)
+i=6: [0, 1, 2, 10, 11, 20, 21], 12, 22 (2 wird vor 10 geschoben)
+i=7: [0, 1, 2, 10, 11, 12, 20, 21], 22 (12 wird vor 20 geschoben)
+i=8: [0, 1, 2, 10, 11, 12, 20, 21, 22] (22 war bereits korrekt)
+
+b)
+1 (für 10) + 1 (20) + 3 (1) + 2 (11) + 1 (21) + 5 (2) + 3 (12) + 1 (22) = 17 Vergleiche
