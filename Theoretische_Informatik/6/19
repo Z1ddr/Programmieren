@@ -1,0 +1,14 @@
+/19
+b)
+Zustand     Eingabe a       Eingabe b
+0                           {3}
+1 (Start)   {0}             {2}
+2           {2}             {3}
+3 (Ende)    {3}             ∅
+
+c)
+DEA:
+ist vollständig definiert.
+
+d)
+L= {ab a^n | n >= 0} U {b a^m b a^k | m, k >= 0}

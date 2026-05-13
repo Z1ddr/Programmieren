@@ -1,8 +1,8 @@
 /15
 a)
-R1: rechtslinear
-R2: linkslinear
-R3: linkslinear
+R1: linkslinear
+R2: rechtslinear
+R3: rechtslinear
 R4: beides
 
 b)
