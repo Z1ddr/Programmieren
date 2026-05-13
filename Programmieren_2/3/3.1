@@ -1,0 +1,52 @@
+/3.1
+a)
+i)
+a:L-Value
+b:L-Value (zeigt auf PR-Value! compile fehler)
+c:Nonmodifieable L-Value (PR-Value-Referenz zeigt zwar auf PR-Value aber weil const, passt weil temporärer speicher für 42 angelegt wird)
+d:L-Value (R-Value-Refernez)
+
+ii)
+Zeile 6: änderbare Referenz auf einen PR-Value
+Zeile 12: änderung eines nonmodifieable-L-Values
+
+iii)
+es entstehen keine X-Values
+
+iv)
+1, 42, 4
+
+b)
+i)
+Zeile 8: R-Value-Referenz auf L-Value
+Zeile 12: änderung über non modifiable L-Value
+
+ii)
+es entstehen keine X-Values
+
+iii)
+2, 2, 2
+
+c)
+i)
+Zeile 6: int a muss kopiert und dann zu double gemacht werden(ist dann PR-Value und auch nicht mehr a sondern bloß noch der wert von a)
+          L-Value-Referenz darf nicht auf PR-Value zeigen
+Zeile 12: nonmodifieable L-Value-Referenz macht das selbe, darf dann aber nicht verändert werden
+
+ii)
+keine X-Values entstehen
+
+iii)
+1, 42, 4
+
+iv)
+verhält sich gleich wie in Aufgabe a
+
+d)
+i)
+mlvRef: weil ich ein L-Value übergebe
+nmlvRef: weil ich ein nonmodifieable-L-Value übergebe
+rvRef: weil ein temporäres objekt erstellt wird
+rvRef: weil ein temporäres objekt mit typumwandlung erstellt wird
+rvRef:
+rvRef
