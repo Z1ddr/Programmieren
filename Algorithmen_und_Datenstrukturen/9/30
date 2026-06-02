@@ -1,0 +1,43 @@
+/30
+a)
+Selectionsort (Immer identischer Aufwand, da stur das Minimum gesucht wird):
+
+Für n=3: (3 * 2) / 2 = 3 Vergleiche
+
+Für n=6: (6 * 5) / 2 = 15 Vergleiche
+
+Für n=9: (9 * 8) / 2 = 36 Vergleiche
+
+Standard-Exchangesort (Bubble Sort ohne vorzeitigen Abbruch):
+
+Für n=3: (3 * 2) / 2 = 3 Vergleiche
+
+Für n=6: (6 * 5) / 2 = 15 Vergleiche
+
+Für n=9: (9 * 8) / 2 = 36 Vergleiche
+
+Insertionsort (Nutzt die bestehende Teil-Sortierung aus):
+
+Für n=3: Das Feld {0, 10, 20} ist sortiert. Jedes Element wird nur 1-mal mit dem linken Nachbarn verglichen. Da das erste Element (i=0) entfällt: 2 Vergleiche.
+
+Für n=6: Bei {0, 10, 20, 1, 11, 21} laufen die ersten drei Elemente glatt durch (2 Vergleiche). Die 1 rutscht nach ganz vorne (3 Vergleiche). Die 11 rutscht bis hinter die 10 (2 Vergleiche). Die 21 steht passend hinter 20 (1 Vergleich). Gesamt: 2 + 3 + 2 + 1 = 8 Vergleiche.
+
+Für n=9: Feld entspricht exakt Aufgabe 27 aus Übungsblatt 8. Gesamt: 17 Vergleiche.
+
+b)
+Selectionsort & Standard-Exchangesort:
+Die mathematische Formel für die Summe lautet allgemein (n * (n - 1)) / 2.
+Da n = 3m, setzen wir dies ein:
+C(m) = (3m * (3m - 1)) / 2 = (9m^2 - 3m) / 2 = 4.5m² - 1.5m
+
+Insertionsort:
+vergleich m=1 zu m=2 zu m=3
+2->8->17 Vergleiche
+m=1 -> 2 Vergleiche
+m=2 -> 3 + 2 + 1 Vergleiche mehr
+m=3 -> 5 + 3 + 1 Vergleiche mehr
+Formel
+C(m)=2m²+m-1
+
+c)
+für alle 3 hat man einen quadratischen Anteil -> O(n²)

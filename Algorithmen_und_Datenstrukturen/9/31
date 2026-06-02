@@ -1,0 +1,30 @@
+/31
+a)
+Best-Fall (Feld ist bereits perfekt sortiert): Die Routine läuft genau 1-mal komplett durch das Feld, stellt fest, dass die Variable 'tausch' false bleibt, und bricht ab.
+Vergleiche im Best-Fall: n - 1
+
+Worst-Fall (Feld ist komplett umgekehrt sortiert): Die Routine kann niemals vorzeitig abbrechen und muss alle Schleifendurchläufe machen.
+Vergleiche im Worst-Fall: (n * (n - 1)) / 2
+
+b)
+Für n=3: Das Feld {0, 10, 20} ist bereits sortiert. Das ist der Best-Fall. Der optimierte Algorithmus benötigt nur einen einzigen Durchlauf.
+Anzahl Vergleiche: 3 - 1 = 2 Vergleiche.
+
+Für n=6: Bei {0, 10, 20, 1, 11, 21} wandert im ersten Durchlauf die 20 nach hinten und die 21 bleibt hinten. Das Feld ist danach noch nicht sortiert. Es braucht weitere Durchläufe, bis keine Tausche mehr stattfinden. Da am Ende immer ein Kontrolldurchlauf ohne Tausch stattfindet, spart man hier bei n=6 gegenüber der Standardvariante noch nichts ein.
+Anzahl Vergleiche: 15 Vergleiche.
+
+Für n=9: Das Feld benötigt laut der Analyse aus Übungsblatt 29 insgesamt 5 Durchläufe, bis es sortiert ist und im 5. Durchlauf kein Tausch mehr stattfindet (Durchlauf 1: 8 Vergleiche, Durchlauf 2: 7, Durchlauf 3: 6, Durchlauf 4: 5, Durchlauf 5: 4).
+Anzahl Vergleiche: 8 + 7 + 6 + 5 + 4 = 30 Vergleiche (Man spart gegenüber den 36 Vergleichen der Standardvariante also 6 Vergleiche ein).
+
+c)
+Für m=1 (n=3): C(1) = 2
+
+Für m=2 (n=6): C(2) = 15
+
+Für m=3 (n=9): C(3) = 30
+
+Die Werte steigen mit der Differenz von +13 und +15. Das mathematische Bildungsgesetz für diese spezifische Reihe lautet:
+C(m) = 4.5m^2 + 4.5m - 7  (für m >= 2).
+
+d)
+O(n²)
