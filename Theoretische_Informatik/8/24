@@ -1,0 +1,30 @@
+/24
+b)
+                Bandsymbol
+Zustand     O           1           X           Y           $
+q0      (q1,X,R)        -           -       (q3,Y,R)        -
+q1      (q1,0,R)    (q2,Y,L)        -       (q1,Y,R)        -
+q2      (q2,0,L)        -       (q0,X,R)    (q2,Y,L)        -
+q3      -               -           -       (q3,Y,R)    (q4,$,N)
+q4      -               -           -           -           -
+
+c)
+1.
+$q0$ -> terminiert, Eingabe nicht akzeptiert
+
+2.
+$q0 01$ |- $X q1 1$ |- $q2 XY$ |- $X q0 Y$ |- $XY q3$ |- $XY q4$
+terminiert in q4, akzeptiert
+
+3.
+$q0 000111$ |- $X q1 00111$ |- $X0 q1 0111$ |- $X00 q1 111$ |- $X0 q2 0Y11$ |- $X q2 00Y11$ |- $q2 X00Y11$ |- $X q0 00Y11$ |- $XX q1 0Y11$ |- $XX0 q1 Y11$ |- $XX0Y q1 11$ |- $XX0 q2 YY1$ |- $XX q2 0YY1$ |- $X q2 X0YY1$ |- $XX q0 0YY1$ |- $XXX q1 YY1$ |- $XXXY q1 Y1$ |- $XXXYY q1 1$ |- $XXXY q2 YY$ |- $XXX q2 YYY$ |- $XX q2 XYYY$ |- $XXX q0 YYY$ |- $XXXY q3 YY$ |- $XXXYY q3 Y$ |- $XXXYYY q3$ |- $XXXYYYq4$
+
+4.
+$q0 011$ |- $X q1 11$ |- $q2 XY1$ |- $X q0 Y1$ |- $XY q3 1$ |- $
+terminiert in q3, nicht akzeptiert
+
+d)
+L(TM)={0^n 1^n | n>=1}
+
+e)
+Chomsky 2 Sprache weil 1 Zähler benötigt wird
