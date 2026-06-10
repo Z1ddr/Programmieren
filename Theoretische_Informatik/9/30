@@ -1,0 +1,14 @@
+ε:
+$q0 $
+
+abc:
+$q0 abc$ |- $X q1 bc$ |- $XY q2 c$ |- $X q3 YZ$ |- $q3 XYZ$ |- $X q0 YZ$ |- $XY q4 Z$ |- $XYZ q5 $ |- $XYZ q6 $
+
+aabbcc:
+$q0 aabbcc$ |- $X q1 abbcc$ |- $Xa q1 bbcc$ |- $XaY q2 bcc$ |- $XaYb q2 cc$ |- $XaY q3 bZc$ |- $Xa q3 YbZc$ |- $X q3 aYbZc$ |- $q3 XaYbZc$ |- $X q0 aYbZc$ |- $XX q1 YbZc$ |- $XXY q1 bZc$ |- $XXYY q2 Zc$ |- $XXYYZ q2 c$ |- $XXYY q3 ZZ$ |- $XXY q3 YZZ$ |- $XX q3 YYZZ$ |- $X q3 XYYZZ$ |- $XX q0 YYZZ$ |- $XXY q4 YZZ$ |- $XXYY q4 ZZ$ |- $XXYYZ q5 Z$ |- $XXYYZZ q5 $ |- $XXYYZZ q6 $
+
+aabc:
+$q0 aabc$ |- $X q1 abc$ |- $Xa q1 bc$ |- $XaY q2 c$ |- $Xa q3 YZ$ |- $X q3 aYZ$ |- $q3 XaYZ$ |- $X q0 aYZ$ |- $XX q1 YZ$ |- $XXY q1 Z$
+
+abcc:
+$q0 abcc$ |- $X q1 bcc$ |- $XY q2 cc$ |- $X q3 YZc$ |- $q3 XYZc$ |- $X q0 YZc$ |- $XY q4 Zc$ |- $XYZ q5 c$
