@@ -1,0 +1,67 @@
+Insertionsort:
+Starte bei i=1, n=Arraygröße.
+Nimmt den Value an Array Stelle i speichert ihn zwischen, schaut dann ob der Value
+Links davon größer ist. Falls das der Fall ist dann speichere den größeren wert an
+Stelle j=i und mache j--. Danach schau ob der Wert Links davon auch kleiner ist als 
+der Zwischengespeicherte Wert. Falls das der Fall ist Speichere diesen an Stelle j(hier j=i, j--).
+Wiederhole so lange bis der Zwischengespeicherte Wert größer als ein Wert Links von ihm ist
+oder man ganz Links im Array angekommen ist. Danach nehme den Zwischengespeicherten
+Wert und speichere in an stelle j(die stelle von der gerade noch nach rechts koppiert wurde
+/an die selbe stelle falls nichts verschoben wurde).Danach mache i++ und wiederhole.
+
+->nimm Wert an Stelle i. falls größere Werte Links davon sind verschiebe sie schrittweise
+nach Rechts von i und setze i links vom letzten verschobenen Wert. Mache das für das 
+ganze Array
+
+
+Selectionsort:
+Starte bei i=0, n=Arraygröße.
+imin=i,
+j=i+1. ist der Wert an Stelle imin größer als der Wert an Stelle j(i+1) dann 
+setze imin=j(imin bekommt den index des kleineren Werts), sonst mache einfach
+weiter mit dem nächsten Schritt. Danach mache j++ und Vergleiche erneutden 
+Wert an Stelle j(jetzt j++) mit dem Wert an stelle imin(den bisher kleinsten 
+Wert(nach erstem durchlauf entweder Wert an stelle i oder an stelle j=i+1))
+falls der Wert an Stelle j kleiner ist dann setze imin=j falls nicht vergleiche
+einfach mit der nächsten Stelle im Array und wiederhole bis zum ende des Arrays.
+Sobald du das ganze Array von i bis zum Ende durchgegangen bist hast du jetzt den
+kleinsten Wert an Stelle imin. Vertausche den Wert an Stelle i mit dem an Stelle
+imin. Jetzt mache i++ und wiederhole.
+
+->suche den kleinsten Wert und Vertausche ihn an Stelle i=0
+->suche den zweitkleinsten Wert und vertausche ihn mit Stelle i=1 usw.
+
+
+Exchange-/Bubblesort:
+Starte bei i=0, n=Arraygröße.
+j=n-2. ist der Wert an Stelle j+1 kleiner als der Wert an Stelle j dann vertausche
+die beiden Werte. Mache j-- und wiederhole den ersten Schritt bis zu i. Dadurch wandert der
+kleinste Wert nach ganz links und es werden generell kleinere Werte nach links und 
+größere Werte nach rechts gebracht. Jetzt mache i++ und wiederhole das Ganze
+(der zweitkleinste Wert geht an die zweite Stelle (i))(Wichtig!: man muss nicht
+bei jedem durchlauf mit dem ganzen Array vergleichen sondern immer bloß bis zur Stelle i)
+
+
+Quicksort:
+l=links=0, r=rechts=n-1, n=Arraygröße
+i=l-1, j=r.
+1. Auswahl eines Pivot-Elements z.b. m=(l+r)/2 und Tausche Wert an Stelle m mit Wert
+an Stelle r
+2. mache i++ und schau ob der Wert an Stelle i kleiner oder gleich groß wie der 
+Wert an Stelle r ist. Wiederhole so lange bis das nicht mehr der Fall ist oder
+man am rechten Ende des Arrays angekommen ist. Danch mache j-- und schau ob der 
+Wert an Stelle j größer als der Wert an Stelle r ist. Wiederhole so lange bis das
+nicht mehr der Fall ist. Wenn danach i kleiner als j ist Vertausche den Wert an 
+Stelle i mit dem Wert an Stelle j. Wiederhole das Ganze wie i kleiner als j ist.
+Danach Tausche Wert an Stelle r mit Wert an Stelle i. Dadurch hast du jetzt von deinem
+Pivot punkt aus den Array Teil links davon(nur kleinere Werte) und den Teil rechts davon
+(nur größere Werte). Jetzt mache das ganze mit jeweils dem linken Teil des Arrays
+und dem rechten Teil des Arrays und dann mit dem linken und rechten Teil vom jewiels
+linken und rechten Teil so oft bis jeder kleine rekursive Teil links und rechts vom jeweiligen
+Pivot bloß noch 1 groß ist.
+
+->suche dir einen Pivotpunkt verschiebe ihn nach ganz Rechts in deinem Array.
+->Verschiebe jetzt alle größeren Werte nach rechts und alle kleineren Werte nach links.
+->wiederhole die zwei Schritte für den rechten und linken teil
+->Wiederhole die zwei Schritte dann für diese rechten und linken teile nochmal usw 
+bis die teile jeweils immer nurnoch 1 groß sind.
