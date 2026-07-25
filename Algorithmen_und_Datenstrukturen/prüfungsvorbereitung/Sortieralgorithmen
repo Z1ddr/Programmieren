@@ -10,8 +10,8 @@ Wert und speichere in an stelle j(die stelle von der gerade noch nach rechts kop
 /an die selbe stelle falls nichts verschoben wurde).Danach mache i++ und wiederhole.
 
 ->nimm Wert an Stelle i. falls größere Werte Links davon sind verschiebe sie schrittweise
-nach Rechts von i und setze i links vom letzten verschobenen Wert. Mache das für das 
-ganze Array
+nach Rechts von i und setze j links vom letzten verschobenen Wert. Mache das für das 
+ganze Array und speichere deinen zwischengespeicherten Wert an Stelle j
 
 
 Selectionsort:
@@ -52,7 +52,7 @@ Wert an Stelle r ist. Wiederhole so lange bis das nicht mehr der Fall ist oder
 man am rechten Ende des Arrays angekommen ist. Danch mache j-- und schau ob der 
 Wert an Stelle j größer als der Wert an Stelle r ist. Wiederhole so lange bis das
 nicht mehr der Fall ist. Wenn danach i kleiner als j ist Vertausche den Wert an 
-Stelle i mit dem Wert an Stelle j. Wiederhole das Ganze wie i kleiner als j ist.
+Stelle i mit dem Wert an Stelle j. Wiederhole das Ganze solange wie i kleiner als j ist.
 Danach Tausche Wert an Stelle r mit Wert an Stelle i. Dadurch hast du jetzt von deinem
 Pivot punkt aus den Array Teil links davon(nur kleinere Werte) und den Teil rechts davon
 (nur größere Werte). Jetzt mache das ganze mit jeweils dem linken Teil des Arrays
@@ -65,3 +65,38 @@ Pivot bloß noch 1 groß ist.
 ->wiederhole die zwei Schritte für den rechten und linken teil
 ->Wiederhole die zwei Schritte dann für diese rechten und linken teile nochmal usw 
 bis die teile jeweils immer nurnoch 1 groß sind.
+
+
+Mergesort:
+l=links=0, r=rechts=n-1, m=mitte=(l+r)/2
+i=l, j=m+1, k=0
+1. Teile dein Array in der mitte 
+2. Erstelle ein Hilfsarray mit der Größe r-l+1
+3. Falls der Wert an der Stelle i kleiner oder gleich dem Wert an der Stelle j ist
+speichere ihn in dein Hilfsarray an Stelle k und mache i++, sonst speichere den
+Wert von Stelle j in dein Hilfsarray an Stelle k und mache j++. Danach mache k++.
+Mache das solange i kleiner oder gleich groß wie m und j kleiner oder gleich groß wie r ist.
+Wenn danach i größer als m ist dann fülle dein Hilfsarray mit den restlichen Werten aus
+deinem j Teil des Arrays. Wenn i aber kleiner oder gleich m ist heißt das, dass dein i 
+Teil des Array noch nicht vollständig in deinem Hilfsarray ist, dein j teil aber schon.
+Dann machst du deinen restlichen i Teil des Arrays einfach noch in dein Hilfsarray.
+danach Überschreibe dein Array mit deinem Hilfsarray.
+Führe das ganze anstatt mit dem ganzen Array jetzt immer erst mit der linken hälfte 
+der linken hälfte von der linken hälfte usw. aus(heißt teile das Array erst in der Mitte
+dann teile diese Hälfte wieder in der Mitte usw.)
+
+->Teile das Array in der Mitte, teile die linke Hälfte danach wieder in der Mitte usw.
+->Sortiere dann das linke Teil das nurnoch 2-3 Werte beinhaltet[[1,2,7]5,4,3,9,8,18,15,16,6].
+Mache dann das selbe mit der rechten Teil[[1,2,7][3,4,5],9,8,18,15,16,6]. Danach sortiere die
+beiden Teile[[1,2,3,4,5,7],9,8,18,15,16,6]. Danach mache das ganze mit dem größeren rechten Teil
+[1,2,3,4,5,7,[8,9,18],15,16,6]->[1,2,3,4,5,7,8,9,18,[6,15,16]]->[1,2,3,4,5,7,[6,8,9,15,16,18]].
+Vergleiche so lange immer größere Teile des Arrays bis du fertig bist. [1,2,3,4,5,6,7,8,9,15,16,18]
+
+
+Shellsort
+quasi Insertionsort bloß das anstatt das i++ und j-- für die schrittweite genommen wird,
+wird nun i+=h und j-=h mit erst ein mal einem großen h z.b. h=40 genommen. Somit wird 
+schnell vorsortiert dann wird das h verkleinert  auf z.b. 13 und wieder vorsortiert.
+Das h wird so lange verkleinert bis es 1 ist und final sortiert wird. Insertionsort ist bei
+vorsortierten Arrays sehr schnell und durch das immer feinere vorsortieren wird das finale 
+Sortieren sehr schnell gemacht.
