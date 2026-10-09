@@ -1,0 +1,41 @@
+Aufgabe 1:
+Ariane 5
+Ursache: Die Software des Trägheitsnavigationssystems stammte von der Ariane 4. Die Ariane 5 flog aber schneller, 
+und ein 64-Bit-Gleitkommawert (horizontale Geschwindigkeit) wurde in einen 16-Bit-Integer umgewandelt. 
+Dabei trat ein Überlauf auf.
+
+Folgen: Die Ausnahme wurde nicht abgefangen, und das System schaltete sich ab. Das identische Backup-System fiel 
+aus demselben Grund aus. Der Bordcomputer interpretierte die Fehlerdaten als Flugdaten und steuerte die Düsen voll aus.
+
+Aufgabe 2:
+Röntgengerät Therac-25
+Die Hardware-Sicherungen des Vorgängers Therac-20 wurden weggelassen, und man verließ sich allein auf die Software. 
+Dabei wurde Code vom Vorgänger wiederverwendet, dessen Fehler bisher von den Hardware-Sicherungen verdeckt wurden.
+Hinzu kamen kryptische Fehlermeldungen („Malfunction 54"), die Bediener einfach wegklickten, mangelhafte Dokumentation 
+und kein unabhängiges Review oder gründlicher Test.
+Der Hersteller nahm die Meldungen zunächst nicht ernst.
+
+Folgen: Das Bestrahlungsgerät gab mehrfach massive Überdosen ab. Mindestens sechs Patienten wurden verletzt, mehrere starben.
+
+Aufgabe 3:
+SN9 und SN10
+SN9 (2. Februar 2021): Beim Landemanöver (Flip) zündete eines der Raptor-Triebwerke nicht wieder,
+wodurch SN9 mit hoher Geschwindigkeit aufschlug und explodierte.
+
+Was bei SN10 besser lief: SN10 konnte weit genug abbremsen und aufrecht landen. 
+Die Zündung der Triebwerke beim Landemanöver funktionierte also.
+Problem bei SN10 (3. März 2021): Einige Minuten nach der Landung explodierte die Rakete.
+
+Aufgabe 4: 
+Boeing 737 MAX
+Ursache:
+Die neuen, größeren Triebwerke veränderten das Flugverhalten der alten 737. Statt eines Neudesigns setzte Boeing MCAS ein, 
+das die Nase nach unten drückt, wenn die Sensoren einen zu hohen Anstellwinkel melden.
+MCAS nutzte nur einen Anstellwinkelsensor (AOA), weil das billiger war. Er war damit ein Single Point of Failure und anfällig 
+für Vogelschäden und Wartungsfehler. Boeing wusste das seit 2015.
+
+Folgen: Zwei Abstürze (Lion Air, Oktober 2018; Ethiopian Airlines, März 2019) kosteten 346 Menschen das Leben. 
+Der Kongressbericht von 2020 führte beide auf das Steuerungssystem MCAS zurück. Die Flotte wurde erst nach dem zweiten Absturz am Boden gehalten, 
+und die FAA gab sie im November 2020 wieder frei.
+
+

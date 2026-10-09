@@ -51,7 +51,7 @@ Q = {q1, q2, q3}
 δ(q2, 0) = (q2, 0, R)
 
 2.
-L(T)=(0|1)(0|1) ((0|1)(0|1)(0|1))*
+L(T)=0*10*(10*10*)*
 
 3.
 Chomsky 3 Sprache durch regulären Ausdruck

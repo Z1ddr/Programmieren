@@ -1,0 +1,32 @@
+b)
+                Bandsymbol
+Zustand     O           1                $
+q0      (q0,0,R)    (q0,1,R)         (q1,$,L)
+q1      (q2,1,L)    (q4,0,L)             -
+q2      (q2,0,L)    (q2,1,L)         (q3,$,R)
+q3(ende)    -           -                -
+q4      (q2,1,L)    (q4,0,L)         (q3,1,N)
+
+c)
+0:
+$q0 0$ |- $0 q0 $ |- $q1 0$ |- $q2 1$ |- $q3 1$
+
+10:
+$q0 10$ |- $1 q0 0$ |- $10 q0 $ |- $1 q1 0$ |- $q2 11$ |- $q3 11$
+
+11:
+$q0 11$ |- $1 q0 1$ |- $11 q0 $ |- $1 q1 1$ |- $q4 10$ |- $q4 00$ |- $q3 100$
+
+101:
+$q0 101$ |- $1 q0 01$ |- $10 q0 1$ |- $101 q0 $ |- $10 q1 1$ |- $1 q4 00$ |- $q2 110$ |- $q3 110$
+
+d)
+ustände umbenennen: Namen ändern (z. B. q0​→qinc0​), um Namenskonflikte mit der Haupt-TM zu vermeiden.
+
+Schnittstellen verbinden: * Den Aufruf-Zustand der Haupt-TM auf dein neues Startsymbol leiten.
+
+    Den Zustand q3​ vom "Endzustand" in einen normalen Übergang zum nächsten Befehl der Haupt-TM umwandeln.
+
+Startposition des Kopfes: Sicherstellen, dass der Lesekopf beim Start links vom Wort steht (da q0​ sofort nach rechts läuft).
+
+Blanksymbole angleichen: Falls die Haupt-TM statt $ ein anderes Zeichen für "Leerzeichen" nutzt (z. B. _ oder B), muss das in der Tabelle überall ausgetauscht werden.
