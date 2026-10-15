@@ -1,0 +1,79 @@
+HCI Übung 2
+
+1.	vor dem Training zum erstellen des Plans. 
+2.	Während des Trainings zum Strukturieren des Workouts
+3.	Kurz nach dem Training für das anpassen von Bestleistungen
+
+1.	Leute die Kraftsport/Bodybuilding betreiben. Personal Trainer, Fitnessökonomen, Sportwissenschaftler.
+
+1.	Empathy Maps für Anfänger und Fortgeschrittene Nutzer
+
+
+
+USER EMPATHY MAP 1: DER ANFÄNGER
+THINK & FEEL
+- Mache ich die Übung gerade richtig?
+- Welches Gerät ist für was gut?
+- Hemmschwelle zu starten
+
+HEAR
+- Wiedersprüchliche Tipps auf TikTok / Instagram.
+- Laute Musik aus den Lautsprechern/Kopfhörern im Gym.
+
+SEE
+- Lauter komplizierte Maschinen.
+- Volles Gym.
+
+SAY & DO
+- Fragt Kumpels: "Welche Übung soll ich heute machen?"
+- Gibt das Aufschreiben schnell auf, wenn es nervt.
+
+PAIN
+- Zu viele Fachbegriffe und verwirrende Apps.
+- Angst vor Verletzungen oder Blamage.
+- Weiß nicht, wie viel Gewicht er draufpacken soll.
+- Falsche Form führt zu Verletzungsgefahr.
+
+GAIN
+- Einfache Pläne zum Anklicken.
+- Kurze Erklärungen/Videos zu den Übungen.
+- Schnell sehen, dass man sich verbessert hat.
+
+
+
+USER EMPATHY MAP 2: DER FORTGESCHRITTENE
+THINK & FEEL
+- Heute MUSS ich die 100 kg auf der Bank drücken.
+- Keine Zeit verschwenden, Fokus auf den Satz.
+- Genervt, wenn der Timer nicht richtig läuft.
+- Will einfach nur seine Zahlen steigern.
+
+HEAR
+- Seine eigene Metal-/Hardstyle-Playlist auf den Kopfhörern.
+- Scheppern von Hantelscheiben.
+- "Wieviele Sätze machst du noch?"
+
+SEE
+- Besetzte Bänke / Geräte.
+-Volles Gym.
+
+SAY & DO
+- Tippt sofort nach dem Satz das Gewicht ein.
+- Stoppt die Pause exakt auf die Sekunde.
+- "Ohne Tracking kannst du’s gleich lassen."
+- "Hab letztens nen neuen PR gehittet"
+
+PAIN
+- Ständiges Hin- und Herwechseln zwischen Timer, Notizen & Musik.
+- Kleine Tasten auf dem Handy mit schwitzigen Händen.
+
+GAIN
+- Alles auf einem Screen (Gewicht eintragen + Timer startet von selbst).
+- Große Knöpfe, die man schnell trifft.
+
+
+BEGRÜNDUNG DER ZIELGRUPPENWAHL
+1. Anfänger: Braucht Führung, einfache Erklärungen und unkomplizierte Abläufe,
+   damit er nicht überfordert wird und die Motivation nicht verliert.
+
+2. Fortgeschrittener: Braucht maximale Effizienz
