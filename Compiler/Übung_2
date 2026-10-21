@@ -1,0 +1,116 @@
+#include <iostream>
+#include <string>
+#include <string_view>
+
+// a) Sprache L(1*0*0): beliebig viele '1', gefolgt von mindestens einem '0'
+//    (da 0*0 äquivalent zu 0+ ist, also mindestens eine Null).
+bool scan_a(std::string_view input) {
+    size_t i = 0;
+    size_t n = input.length();
+
+    // 1. Beliebig viele '1' konsumieren
+    while (i < n && input[i] == '1') {
+        i++;
+    }
+
+    // 2. Mindestens eine '0' muss folgen
+    if (i >= n || input[i] != '0') {
+        return false;
+    }
+
+    // 3. Restliche '0'en konsumieren
+    while (i < n && input[i] == '0') {
+        i++;
+    }
+
+    // Wenn am Ende des Strings angekommen, war der String gültig
+    return i == n;
+}
+
+// b) Ganze Dezimalzahlen (Integer) mit Vorzeichen und ohne führende 0.
+//    - Optionales Vorzeichen ('+' oder '-')
+//    - Einzellne '0' ist erlaubt.
+//    - Mehrstellige Zahlen dürfen nicht mit '0' beginnen.
+bool scan_b(std::string_view input) {
+    size_t i = 0;
+    size_t n = input.length();
+
+    if (n == 0) return false;
+
+    // Optionales Vorzeichen verarbeiten
+    if (input[i] == '+' || input[i] == '-') {
+        i++;
+    }
+
+    // Nach dem Vorzeichen muss mindestens eine Ziffer kommen
+    if (i >= n) return false;
+
+    // Sonderfall: Einzelne '0'
+    if (input[i] == '0') {
+        i++;
+        return i == n; // Nach einer führenden '0' darf nichts mehr folgen
+    }
+
+    // Erster Ziffernwert muss zwischen '1' und '9' liegen
+    if (input[i] < '1' || input[i] > '9') {
+        return false;
+    }
+    i++;
+
+    // Beliebig viele Ziffern ('0'-'9')
+    while (i < n && (input[i] >= '0' && input[i] <= '9')) {
+        i++;
+    }
+
+    return i == n;
+}
+
+// c) Ganze Binärzahlen ohne führende 0.
+//    - Einzelne '0' ist erlaubt.
+//    - Mehrstellige Binärzahlen müssen mit '1' beginnen.
+bool scan_c(std::string_view input) {
+    size_t i = 0;
+    size_t n = input.length();
+
+    if (n == 0) return false;
+
+    // Sonderfall: Einzelne '0'
+    if (input[i] == '0') {
+        i++;
+        return i == n; // Nach führender '0' darf nichts mehr stehen
+    }
+
+    // Erste Ziffer muss '1' sein
+    if (input[i] != '1') {
+        return false;
+    }
+    i++;
+
+    // Beliebig viele '0' oder '1' konsumieren
+    while (i < n && (input[i] == '0' || input[i] == '1')) {
+        i++;
+    }
+
+    return i == n;
+}
+
+int main() {
+    std::cout << std::boolalpha;
+
+    // Test a) L(1*0*0) -> Mindestens eine Null am Ende
+    std::cout << "a) '1100': " << scan_a("1100") << " (erwartet: true)\n";
+    std::cout << "a) '0':    " << scan_a("0")    << " (erwartet: true)\n";
+    std::cout << "a) '111':  " << scan_a("111")  << " (erwartet: false)\n\n";
+
+    // Test b) Dezimal mit Vorzeichen, ohne führende 0
+    std::cout << "b) '+123': " << scan_b("+123") << " (erwartet: true)\n";
+    std::cout << "b) '-0':   " << scan_b("-0")   << " (erwartet: true)\n";
+    std::cout << "b) '012':  " << scan_b("012")  << " (erwartet: false)\n\n";
+
+    // Test c) Binär ohne führende 0
+    std::cout << "c) '1010': " << scan_c("1010") << " (erwartet: true)\n";
+    std::cout << "c) '0':    " << scan_c("0")    << " (erwartet: true)\n";
+    std::cout << "c) '011':  " << scan_c("011")  << " (erwartet: false)\n";
+
+    return 0;
+}
